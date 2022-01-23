@@ -1,0 +1,46 @@
+.headline {
+    font-size: $font-XLarge;
+    white-space: nowrap;
+}
+
+.APIContainer {
+    margin: 50px auto;
+    padding: 10px 20px;
+    border: 2px solid $whitesmoke;
+    border-radius: 5px;
+    width: 40%;
+    min-width: 500px;
+    // height: 50%;
+  }
+  
+  .marginTopBottom {
+    margin: 20px 0;
+  }
+  
+  .covidInput {
+    display: flex;
+    justify-content: center;
+    line-height: $font-XLarge;
+    margin: 20px auto;
+  }
+  
+  #countries {
+    margin-left: 20px;
+    width: 35%;
+  }
+  
+  .mySeparator {
+    height: 0.5px;
+    width: 80%;
+    background-color: $whitesmoke;
+    margin: 0 auto;
+    border-radius: 5px;
+  
+  }
+  .textCenter {
+  text-align: center;
+  }
+
+  .fontLarge {
+    font-size: $font-large;
+  }

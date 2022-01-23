@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="./scripts/main.js" type="module"></script> -->
+    <section class="bg">
+        <!-- background -->
+        <video autoplay muted loop>
+            <source src="./assets/video/Masks on a table.mp4">
+        </video>
+        
+        <!-- square animation -->
+        <div class="animationElements">
+            <div class="square" id="square1"></div>
+            <div class="square" id="square2"></div>
+            <div class="square" id="square3"></div>
+        </div>
+        
+
+        <!-- COVID 19 data -->
+        <section class="center whiteColor">
+            <div class="textCenter headline">Latest COVID 19 Statistics</div>
+
+            <!-- bar animation -->
+            <div class="bar"></div>
+
+            <div class="APIContainer">
+                <div class="covidInput">
+                <p>Select a country:</p>
+                <select id="countries">
+                </select>
+                </div>
+                <hr class="mySeparator">
+                <div class="textCenter fontLarge">
+                <p class="marginTopBottom" id="covidNewConfirmed">New confirmed cases: /</p>
+                <p class="marginTopBottom" id="covidTotalConfirmed">Total confirmed cases: /</p>
+                <p class="marginTopBottom" id="covidNewDeaths">New deaths: /</p>
+                <p class="marginTopBottom" id="covidTotalDeaths">Total deaths: /</p>
+                <p class="marginTopBottom" id="covidLastUpdate">Last updated: /</p>
+                </div>
+                
+            </div>
+        </section>
+    </section>   
+
+    <script src="./scripts/main.js" type="module"></script>
+   
+</body>
+</html>

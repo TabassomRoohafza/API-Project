@@ -1,0 +1,168 @@
+.bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(25%) grayscale(50%) sepia(50%) saturate(50%);
+  object-position: center center;
+}
+
+.bar {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 5px;
+  width: 80%;
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.bar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 6px;
+  border-radius: 5px;
+  border-left: 8px solid #252222;
+  border-right: 8px solid #252222;
+  animation: moveBar 8s linear infinite forwards;
+}
+
+@keyframes moveBar {
+  from {
+    left: 0%;
+  }
+  to {
+    left: calc( 100% - 18px);
+  }
+}
+.animationElements {
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(-70%);
+}
+
+.square {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveSquare 3s ease-in-out infinite backwards;
+}
+
+.square::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #fff;
+  transform: rotate(45deg);
+}
+
+@keyframes moveSquare {
+  from {
+    transform: translate(-100%, -50%);
+    opacity: 0.7;
+  }
+  to {
+    transform: translate(-30%, -50%);
+    opacity: 0;
+  }
+}
+#square1 {
+  width: 60%;
+  height: 60%;
+}
+
+#square2 {
+  animation-delay: 1000ms;
+}
+
+#square3 {
+  width: 40%;
+  height: 40%;
+  animation-delay: 2000ms;
+}
+
+.headline {
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.APIContainer {
+  margin: 50px auto;
+  padding: 10px 20px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  width: 40%;
+  min-width: 500px;
+}
+
+.marginTopBottom {
+  margin: 20px 0;
+}
+
+.covidInput {
+  display: flex;
+  justify-content: center;
+  line-height: 2rem;
+  margin: 20px auto;
+}
+
+#countries {
+  margin-left: 20px;
+  width: 35%;
+}
+
+.mySeparator {
+  height: 0.5px;
+  width: 80%;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.fontLarge {
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.whiteColor {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
